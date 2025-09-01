@@ -2,16 +2,38 @@
 node_modules/
 *.pnp
 .pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnpm-store/
 
 # Build output
 dist/
 build/
+out/
 *.tsbuildinfo
+.next/
+.nuxt/
+.output/
+.vercel/
+.netlify/
 
 # Environment variables
 .env
 .env.local
 .env.*.local
+.env.development
+.env.test
+.env.production
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.npmrc
+.yarnrc
+.yarnrc.yml
 
 # Logs
 logs/
@@ -19,6 +41,8 @@ logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
 # Runtime data
 pids
@@ -29,26 +53,79 @@ pids
 # Testing
 coverage/
 .nyc_output
+.jest/
+test-results/
+playwright-report/
+test-results.xml
 
-# IDEs
+# Cache directories
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# IDEs and Editors
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 .DS_Store
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# AI Coding Tools
+.cursor/
+.cursor-tutor/
+.copilot/
+.github-copilot/
+.codeium/
+.tabnine/
+.kite/
+.sourcegraph/
+.replit/
+.gitpod/
+.codespaces/
+.devcontainer/
+.vscode-server/
+.vscode-test/
+.history/
+.ai/
+.assistant/
+.claude/
+.chatgpt/
+.bard/
+.augment/
+.aider/
+.continue/
+.windsurf/
 
 # Docker
 docker-compose.override.yml
 .docker/
+.dockerignore
 
 # Data directories
 data/
 rag-documents/
 models/
 embeddings-cache/
+uploads/
+downloads/
 
 # Temporary files
 *.tmp
+*.temp
 temp/
 tmp/
+.tmp/
+.temp/
